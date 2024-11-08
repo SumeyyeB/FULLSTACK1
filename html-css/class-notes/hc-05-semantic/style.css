@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #859ab3;
+}
+header {
+  background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcromsalvatera.com.au%2Fwp-content%2Fuploads%2F2024%2F02%2FMusic-Marketing-Digital.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 2rem;
+  color: rgb(226, 223, 13);
+  text-align: center;
+  align-content: center;
+}
+nav nav {
+  background-color: #021a36;
+  padding: 2rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  padding: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+/* a:active{
+    color: aqua;
+    
+}
+a:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    padding: 2rem;
+} */
+
+/* box-shadow: gölge vermek
+ 4 tane değer alır: yatay öteleme, dikey öteleme, blur etkisi, renk */
+section {
+  background-color: aliceblue;
+  color: #4b6d94;
+  width: 90%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 2rem;
+  border-radius: 3rem;
+  border-top-left-radius: 2rem;
+  box-shadow: 4px 4px 0 rgb(143, 129, 129), 10px 10px 0 rgb(227, 43, 43);
+}
+ul {
+  list-style-position: inside;
+  list-style-type: circle;
+  /* none square vs. kullanabilirsin. */
+  /* list-style-image: url(https://img.clipart-library.com/2/clip-user/clip-user-11.jpg); */
+}
+/* .social{
+    font-size: 2rem;
+} = f logosunu büyültür. */
+.history li:first-child {
+  color: red;
+}
+.history li:last-child {
+  color: #859ab3;
+}
+.history li:nth-child(3) {
+  color: black;
+}
+.history li:nth-child(even) {
+  color: blue;
+}
+.genre li::before {
+  content: "🎸";
+}
+.genre li::after {
+  content: "🎸";
+  font-size: 2rem;
+  border: 1px solid rgb(102, 11, 11);
+}
+.social a {
+  color: beige;
+  padding: 0.5rem;
+}
+.music::first-letter {
+  font-size: 3rem;
+  color: rgb(114, 18, 204);
+}
+footer {
+  background-color: rgb(18, 115, 105);
+}

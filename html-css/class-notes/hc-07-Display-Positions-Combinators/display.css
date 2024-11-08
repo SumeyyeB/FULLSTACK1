@@ -1,0 +1,48 @@
+h1 {
+  background-color: blueviolet;
+}
+a {
+  background-color: aqua;
+  width: 100px;
+  height: 250px;
+  /* display: inline-block; */
+  /* padding: 50px; */
+}
+label {
+  background-color: rgb(190, 135, 53);
+  /* margin: 50px; */
+  display: inline-block;
+  padding: 50px;
+}
+span {
+  background-color: olive;
+  display: block;
+}
+.box {
+  background-color: teal;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.ornek {
+  border: 5px solid red;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+}
+p {
+  background-color: pink;
+  text-align: center;
+}
+i {
+  background-color: pink;
+  text-align: center;
+}
+b {
+  border: 2px solid red;
+  display: block;
+  width: 75px;
+  margin: auto;
+  text-align: center;
+}

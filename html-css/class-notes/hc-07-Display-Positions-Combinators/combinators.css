@@ -1,0 +1,74 @@
+div p {
+  /* background-color: olive; */
+}
+.container div p {
+  /* background-color: teal; */
+}
+
+/* p den hemen sonra gelen div  */
+p + div {
+  /* background-color: purple; */
+}
+.p2 + div {
+  background-color: purple;
+}
+/* div den hemen sonra gelen p */
+div + p {
+  /* background-color: blue; */
+}
+
+/* div den hemen sonra gelen bütün p'ler */
+div ~ p {
+  /* background-color: darkgoldenrod; */
+}
+
+div > p {
+  /* background-color: brown; */
+}
+
+a[target="_blank"] {
+  background-color: orange;
+}
+
+h2[title="baslik1"] {
+  background-color: crimson;
+}
+p[title="paragraf1"] {
+  background-color: skyblue;
+}
+p[title="paragraf2"]::first-line {
+  color: brown;
+  /* background-color: skyblue; */
+}
+p[title="paragraf2"]::first-letter {
+  color: blue;
+  font-size: 3rem;
+  /* background-color: skyblue;*/
+}
+.out {
+  border: 2px solid red;
+  width: 10rem;
+  height: 10rem;
+  margin: 50px auto;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 60px;
+  box-sizing: border-box;
+  /* outline: 5px  dashed purple; */
+  /* outline-offset: 1rem; */
+}
+.out:hover {
+  outline: 5px dashed purple;
+  outline-offset: 0.5rem;
+}
+.cw {
+  border: 5px solid red;
+  width: 20rem;
+  margin: 50px auto;
+  text-align: center;
+  outline: 15px solid purple;
+  outline-offset: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: orange;
+}

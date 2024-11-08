@@ -1,0 +1,44 @@
+/* importlar daima en başa yazılır. */
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Sixtyfour+Convergence&display=swap");
+@font-face {
+  font-family: "ch18";
+  src: url(./reign.otf);
+}
+
+/* 1.Yöntem Css var olan yöntemini kullanma. */
+.cssFont {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: blue;
+}
+
+/* 2.Yöntem google font ile harici font kullanma. */
+.googleFont {
+  font-family: "Sixtyfour Convergence", serif;
+  color: rgb(45, 155, 69);
+}
+
+.googlefontimport {
+  font-family: "Playwrite GB S", cursive;
+  color: rgb(48, 121, 121);
+  font-weight: 900;
+}
+.hariciFont {
+  font-family: "ch18";
+}
+.baba {
+  font-size: 20px;
+  /* parent element olduğundan dolayı 1em=20px olmuş oldu. */
+}
+.fontSize {
+  font-size: 20px;
+  /* baba divin font-size 20px olduğu için 1.5 em 30px olmuş oldu. */
+  /* em rem */
+  font-size: 0.5em;
+  /* html etiketine font-size 8px verdiğimiz için 1rem = 8px  */
+  /* rem: root em => en baba divin(root:html) font-size göre hareket edilir. */
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+img {
+  width: 10rem;
+}

@@ -1,0 +1,28 @@
+/* Elemenet Seçici */
+/* ctrl + ö : yoruma alma  */
+* {
+  font-size: 25px;
+  background-color: rgb(148, 180, 180);
+}
+h1 {
+  color: rgb(25, 3, 46);
+  background-color: rgb(134, 98, 167);
+  padding: 10px;
+  border: 2px solid rgb(192, 52, 169);
+}
+/* Bir elemente birden fazla class eklenebilir. */
+/* Birden fazla elemente aynı classı verilebilir. */
+
+.box {
+  width: 200px;
+  background-color: rgb(199, 95, 168);
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+}
+.small_box {
+  background-color: rgb(202, 157, 196);
+}
+#idname {
+  background-color: rgb(99, 53, 83);
+}

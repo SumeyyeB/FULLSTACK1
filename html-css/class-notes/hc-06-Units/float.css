@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+.img-float {
+  width: 40%;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.par1 {
+  background-color: orange;
+}
+.clear {
+  clear: both;
+}
+/* .par2{
+    clear: left;
+} */
+.container {
+  border: 2px solid red;
+  margin-top: 20px;
+}
+.box {
+}
+.box1 {
+  background-color: blueviolet;
+  float: left;
+  width: 20%;
+  height: 10vh;
+  background-image: url("https://picsum.photos/id/684/777/400");
+  background-size: cover;
+}
+.box2 {
+  background-color: rgb(214, 211, 45);
+  float: left;
+  width: 33%;
+  height: 30vh;
+  background-image: url("https://picsum.photos/id//567/400");
+  background-size: cover;
+}
+.box3 {
+  background-color: rgb(8, 177, 98);
+  float: left;
+  width: 20%;
+  height: 30vh;
+  background-image: url("https://picsum.photos/id/386/777/400");
+  background-size: cover;
+}
