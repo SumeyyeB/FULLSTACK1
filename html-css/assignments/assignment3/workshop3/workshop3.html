@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link rel="stylesheet" href="./workshop3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="Application-form">
+        <div class="form-header">
+          <img
+            src="./img/depositphotos_380374686-stock-illustration-call-icon-vector-phone-icon.jpg"
+            width="100px"
+            alt="Phone Icon"
+          />
+          <h2>Application Form</h2>
+        </div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your full name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="example@email.com" />
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" placeholder="xxx-xxx-xxxx" />
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" />
+
+        <label>Gender:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+        </div>
+        <label for="country">Country:</label>
+        <select id="country">
+          <option>Select your country</option>
+          <option>CANADA</option>
+          <option>TURKİYE</option>
+          <option>GERMANY</option>
+        </select>
+        <label>Skills and Experience</label>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="skills" value="coding" />Coding</label
+          >
+          <label
+            ><input type="checkbox" name="skills" value="design" />Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="skills"
+              value="marketing"
+            />Marketing</label
+          >
+        </div>
+        <label for="experience">Brief Experience</label>
+        <textarea
+          id="experience"
+          placeholder="Describe your experience..."
+        ></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>
