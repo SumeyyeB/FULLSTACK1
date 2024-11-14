@@ -35,4 +35,21 @@ let sonuc = (function (x, y) {
 
 console.log(sonuc);
 
-// Değişken Kapsülleme ------- TODO ----
+// Değişken Kapsülleme
+// Kapsülleme: sifre değişkeni, IIFE sayesinde yalnızca bu fonksiyonun içinde bulunur ve dışarıdan doğrudan erişilemez. Böylece sifre değişkeni kapsüllenmiş olur.
+const veri = (function () {
+  const sifre = "12345";
+
+  return {
+    sifreGoster: function () {
+      return sifre;
+    },
+  };
+})();
+
+console.log(veri.sifreGoster());
+
+// Kapsüllemenin Faydaları
+// Güvenlik: sifre değişkeni, doğrudan erişime kapatılarak yalnızca yetkili fonksiyonlar aracılığıyla gösterilir.
+// Veri Gizliliği: İstenmeyen değişikliklere karşı korunur.
+// Kontrollü Erişim: Yalnızca belirlenen metodlar aracılığıyla erişim sağlanır.
