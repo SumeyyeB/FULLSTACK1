@@ -17,3 +17,31 @@
 // Redirection messages (300 – 399)
 // Client error responses (400 – 499)
 // Server error responses (500 – 599)
+
+//!chain (zincir then)
+// fetch("https://api.github.com/users").then((res)=>res.json()).then((veri)=>console.log(veri))
+
+fetch("https://api.github.com/users") //database e istek attık
+  .then((res) => {
+    if (!res.ok) {
+      //hata kontrolü yaptık
+      throw new Error("url de hata var");
+    }
+
+    return res.json(); //gelen verileri js ye uygun hale getirdik
+  })
+  .then((veri) => ekranaBastir(veri)) //veriler hatasız ise çalışacak kod
+  .catch((error) => console.log(error)); //veriler hatalı ise çalışacak kod
+
+const ekranaBastir = (data) => {
+  console.log(data);
+
+  data.forEach(({ login, avatar_url, node_id }) => {
+    document.querySelector("section").innerHTML += `
+   
+   <h1>${login} </h1>
+   <img width="300px" src=${avatar_url}/>
+   <h3>${node_id} </h3>
+   `;
+  });
+};
